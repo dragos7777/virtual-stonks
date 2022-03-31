@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/virtual-stonks/static/css/main.36649121.css",
-    "main.js": "/virtual-stonks/static/js/main.cb9dc821.js",
+    "main.js": "/virtual-stonks/static/js/main.ab47cce3.js",
     "static/media/green.png": "/virtual-stonks/static/media/green.156b5005cd018258688a.png",
     "static/media/to_the_moon.jpg": "/virtual-stonks/static/media/to_the_moon.62eba5528221f496d9c6.jpg",
     "static/media/rocket.png": "/virtual-stonks/static/media/rocket.84b12b0b9c2fedde390e.png",
     "index.html": "/virtual-stonks/index.html",
     "main.36649121.css.map": "/virtual-stonks/static/css/main.36649121.css.map",
-    "main.cb9dc821.js.map": "/virtual-stonks/static/js/main.cb9dc821.js.map"
+    "main.ab47cce3.js.map": "/virtual-stonks/static/js/main.ab47cce3.js.map"
   },
   "entrypoints": [
     "static/css/main.36649121.css",
-    "static/js/main.cb9dc821.js"
+    "static/js/main.ab47cce3.js"
   ]
 }
