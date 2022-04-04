@@ -5,7 +5,6 @@ import { getStock } from "../helpers/firebase";
 
 const StonkController = (props) => {
   const [curInfo, setTotalPrice] = useState(null);
-  console.log(curInfo);
   const navigate = useNavigate();
   const onInvestHandler = () => {
     navigate(`/virtual-stonks/search/${props.symbol}`);
@@ -22,7 +21,10 @@ const StonkController = (props) => {
       <p>{`Symbol: ${props.symbol}`}</p>
       <p>{`Amount: ${props.amount}`}</p>
       {curInfo && <p>{`Total value: ${curInfo.price * props.amount}`}</p>}
-      <button onClick={onInvestHandler}> {"INVEST"} </button>
+      <button className={styles.button} onClick={onInvestHandler}>
+        {" "}
+        {"INVEST"}{" "}
+      </button>
     </li>
   );
 };

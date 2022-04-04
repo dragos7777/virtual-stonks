@@ -1,12 +1,12 @@
 import PageContainer from "../UI/PageContainer";
 import { useCookies } from "react-cookie";
-import Card from "../UI/Card";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { stonksAction } from "../store/my-stonks-slice";
 import { sendStonks, getUser } from "../helpers/firebase";
+import styles from "./WelcomePage.module.css";
 import NavBar from "../components/NavBar";
 
 const WelcomePage = (props) => {
@@ -26,11 +26,11 @@ const WelcomePage = (props) => {
         tranzactions: tranzactions,
         cashMoney: cashMoney,
       };
-      console.log(payload);
+
       dispatch(stonksAction.setStonks(payload));
     });
   }
-  console.log(cookies);
+
   const textInputRef = useRef();
   const onSetName = () => {
     const newToken = textInputRef.current.value + Date.now();
@@ -49,25 +49,37 @@ const WelcomePage = (props) => {
   return (
     <PageContainer>
       {<NavBar />}
-      <h1>HELLO</h1>
-      {cookies.tokenVirtualStonk && <p>HELLO {user}</p>}
-      {cookies.tokenVirtualStonk && (
-        <button
-          onClick={() => {
-            navigate("/virtual-stonks/search");
-          }}
-        >
-          {"GO BUY"}
-        </button>
-      )}
+      <div className={styles.container}>
+        <h1 className={styles.title}>WELCOME TO VIRTUAL STONKS</h1>
+        {cookies.tokenVirtualStonk && (
+          <p className={styles.user}>Hello {user}!</p>
+        )}
+        {cookies.tokenVirtualStonk && (
+          <button
+            className={styles.button}
+            onClick={() => {
+              navigate("/virtual-stonks/search");
+            }}
+          >
+            {"GO BUY"}
+          </button>
+        )}
+      </div>
       {!cookies.tokenVirtualStonk && (
-        <Card>
-          <div>
-            <label htmlFor="name">Choose your name: </label>
-            <input type="text" id="search-bar" ref={textInputRef}></input>
-            <button onClick={onSetName}>SET NAME</button>
-          </div>
-        </Card>
+        <div className={styles.container}>
+          <label className={styles.user} htmlFor="name">
+            Choose your name:{" "}
+          </label>
+          <input
+            className={styles.input}
+            type="text"
+            id="search-bar"
+            ref={textInputRef}
+          ></input>
+          <button className={styles.button} onClick={onSetName}>
+            SET NAME TO START BUYING
+          </button>
+        </div>
       )}
     </PageContainer>
   );

@@ -1,0 +1,19 @@
+.search-bar {
+  max-width: 60rem;
+  margin: 3rem auto;
+}
+
+.search-bar div {
+  background-color: #b7d7e8;
+}
+
+.button {
+  border-radius: 4px;
+  border: 1px solid #87bdd8;
+  background-color: #87bdd8;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: skyblue;
+}

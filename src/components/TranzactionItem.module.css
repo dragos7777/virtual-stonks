@@ -1,0 +1,18 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.item p {
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .item {
+    flex-direction: column;
+  }
+  .item p {
+    width: 100%;
+  }
+}

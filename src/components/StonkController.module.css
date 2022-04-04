@@ -1,0 +1,10 @@
+.button {
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #87bdd8;
+  background-color: #87bdd8;
+}
+
+.button:hover {
+  background-color: skyblue;
+}

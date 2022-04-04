@@ -1,0 +1,29 @@
+.stonk {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #b7d7e8;
+  border-radius: 11px;
+}
+
+.stonk h2 {
+  margin: 0 0 0.5rem 0;
+  color: #2c4463;
+}
+
+.stonk button {
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #87bdd8;
+  background-color: #87bdd8;
+}
+
+.stonk button:hover {
+  background-color: skyblue;
+}

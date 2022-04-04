@@ -1,0 +1,19 @@
+.stonks {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+}
+
+.stonk-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.stonk-items::-webkit-scrollbar {
+  display: none;
+}

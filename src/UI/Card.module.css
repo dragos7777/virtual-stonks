@@ -1,0 +1,28 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border: 7px groove rgb(0, 78, 117);
+  border-radius: 14px;
+  background-color: #b7d7e8;
+  margin: 1rem;
+  width: 90%;
+  height: 90%;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    font-size: 0.55rem;
+  }
+}
