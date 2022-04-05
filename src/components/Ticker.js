@@ -3,7 +3,7 @@ import green from "../assests/green.png";
 import red from "../assests/red-arrow.png";
 import { useEffect, useState } from "react";
 import { getStock } from "../helpers/firebase";
-const symb = ["GOOGL", "IBM", "AMD", "BA", "AMZN"];
+const symb = ["GOOGL", "BA", "AMZN"];
 
 const Ticker = (props) => {
   const [symbols, setSymbols] = useState([]);
