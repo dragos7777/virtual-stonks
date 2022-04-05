@@ -99,7 +99,7 @@ const StonkDetail = (props) => {
       <h1 className={styles.title}>{props.baseInfo.symbol}</h1>
       <div className={styles.chart}>
         <Card>
-          <StockChart />
+          <StockChart symbol={props.baseInfo.symbol} />
         </Card>
       </div>
       <div className={styles.row}>

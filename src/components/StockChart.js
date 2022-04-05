@@ -1,4 +1,3 @@
-import styles from "./StockChart.module.css";
 import { getStockHistory } from "../helpers/firebase";
 import { useEffect, useState } from "react";
 import {
@@ -14,7 +13,7 @@ import {
 const StockChart = (props) => {
   const [stockHistory, setstockHistory] = useState();
   useEffect(() => {
-    getStockHistory("GME").then((data) => {
+    getStockHistory(props.symbol).then((data) => {
       setstockHistory(data);
     });
   }, []);
