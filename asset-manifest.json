@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/virtual-stonks/static/css/main.518db495.css",
-    "main.js": "/virtual-stonks/static/js/main.08973c4f.js",
+    "main.css": "/virtual-stonks/static/css/main.ab4f5fe2.css",
+    "main.js": "/virtual-stonks/static/js/main.8ef1a708.js",
     "static/media/green.png": "/virtual-stonks/static/media/green.156b5005cd018258688a.png",
     "static/media/to_the_moon.jpg": "/virtual-stonks/static/media/to_the_moon.62eba5528221f496d9c6.jpg",
     "static/media/rocket.png": "/virtual-stonks/static/media/rocket.84b12b0b9c2fedde390e.png",
     "index.html": "/virtual-stonks/index.html",
-    "main.518db495.css.map": "/virtual-stonks/static/css/main.518db495.css.map",
-    "main.08973c4f.js.map": "/virtual-stonks/static/js/main.08973c4f.js.map"
+    "main.ab4f5fe2.css.map": "/virtual-stonks/static/css/main.ab4f5fe2.css.map",
+    "main.8ef1a708.js.map": "/virtual-stonks/static/js/main.8ef1a708.js.map"
   },
   "entrypoints": [
-    "static/css/main.518db495.css",
-    "static/js/main.08973c4f.js"
+    "static/css/main.ab4f5fe2.css",
+    "static/js/main.8ef1a708.js"
   ]
 }
